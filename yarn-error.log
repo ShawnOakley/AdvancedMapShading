@@ -1,0 +1,57 @@
+Arguments: 
+  /usr/local/Cellar/node/11.9.0/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  11.9.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/shawn.oakley/MapShading/package.json: Unexpected string in JSON at position 164
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "MapShading",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/ShawnOakley/AdvancedMapShading.git",
+    "license": "MIT"
+    "scripts": {
+      "load-image": "budo load-image-demo.js --live -- -t brfs",
+      "elevation": "budo elevation-demo.js --live -- -t brfs",
+      "normals": "budo normals-demo.js --live -- -t brfs",
+      "direct": "budo direct-lighting-demo.js --live -- -t brfs",
+      "soft-shadows": "budo soft-shadows-demo.js --live -- -t brfs",
+      "ambient-occlusion": "budo ambient-occlusion-demo.js --live -- -t brfs",
+      "combined-lighting": "budo combined-lighting-demo.js --live -- -t brfs",
+      "satellite": "budo satellite-terrain-demo.js --live -- -t brfs",
+      "tiled": "budo tiled-demo.js --live -- -t brfs"
+    },
+    "keywords": [],
+    "author": "Rye Terrell",
+    "license": "Unlicense",
+    "devDependencies": {
+      "brfs": "^2.0.2",
+      "budo": "^11.6.1",
+      "gl-matrix": "^3.0.0",
+      "regl": "^1.3.11"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
