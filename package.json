@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "load-image": "budo loadImage.js --live -- -t brfs",
+    "map-tile-lighting": "budo mapTileLighting.js --live -- -t brfs",
     "elevation": "budo elevation-demo.js --live -- -t brfs",
     "normals": "budo normals-demo.js --live -- -t brfs",
     "direct": "budo direct-lighting-demo.js --live -- -t brfs",
